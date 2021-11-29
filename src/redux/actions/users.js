@@ -1,8 +1,9 @@
+import users from "../reducers/users";
 import * as type from "../types";
 
-export function getUsers(users) {
+export function getUsers() {
   return {
-    type: type.GET_USERS,
+    type: type.GET_USERS_REQUESTED,
     payload: users,
   };
 }
